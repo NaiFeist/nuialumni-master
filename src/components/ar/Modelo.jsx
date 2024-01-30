@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { OrbitControls, PointLight } from "@react-three/drei";
+import { OrbitControls, pointLight } from "@react-three/drei";
 
 function Scene() {
     const gltf = useLoader(GLTFLoader, '/model.gltf');
